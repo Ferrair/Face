@@ -58,6 +58,13 @@ public final class FaceUtil {
         return Highgui.imwrite(getFilePath(context, fileName), mat);
     }
 
+    public static File getFaceFile(Context context, String fileName) {
+        String filePath = getFilePath(context, fileName);
+        if(filePath == null)
+            return null;
+        return new File(filePath);
+    }
+
     /**
      * 删除特征
      *

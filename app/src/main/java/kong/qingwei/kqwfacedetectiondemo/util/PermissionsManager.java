@@ -1,4 +1,4 @@
-package kong.qingwei.kqwfacedetectiondemo;
+package kong.qingwei.kqwfacedetectiondemo.util;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
