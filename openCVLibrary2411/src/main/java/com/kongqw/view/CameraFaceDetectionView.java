@@ -198,10 +198,10 @@ public class CameraFaceDetectionView extends JavaCameraView implements CameraBri
                     faces, // 检测到的人脸
                     1.1, // 表示在前后两次相继的扫描中，搜索窗口的比例系数。默认为1.1即每次搜索窗口依次扩大10%;
                     3, // 默认是3 控制误检测，表示默认几次重叠检测到人脸，才认为人脸存在
-                    CV_HAAR_FIND_BIGGEST_OBJECT // 返回一张最大的人脸（无效？）
+                    CV_HAAR_FIND_BIGGEST_OBJECT
                             | CV_HAAR_SCALE_IMAGE
                             | CV_HAAR_DO_ROUGH_SEARCH
-                            | CV_HAAR_DO_CANNY_PRUNING, //CV_HAAR_DO_CANNY_PRUNING ,// CV_HAAR_SCALE_IMAGE, // TODO: objdetect.CV_HAAR_SCALE_IMAGE
+                            | CV_HAAR_DO_CANNY_PRUNING,
                     new Size(mAbsoluteFaceSize, mAbsoluteFaceSize),
                     new Size(mGray.width(), mGray.height()));
 
